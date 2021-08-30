@@ -1,6 +1,12 @@
 import React from "react";
 import name from "../images/name.png";
 import me from "../images/me.png";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const Main = () => {
   return (
@@ -31,6 +37,7 @@ const Main = () => {
             Behance
           </a>
         </div>
+        <Link  to='/contact'>
         <div className="buttonnn w-2/4 lg:w-full text-yellow-400 
         flex items-center justify-center py-2 mt-6  lg:mb-2 hover:bg-yellow-400 hover:text-gray-800 transform transition duration-300
         hover:scale-110">
@@ -38,6 +45,7 @@ const Main = () => {
             CONTACT ME
           </button>
         </div>
+        </Link>
       </div>
       <div className="section_two w-3/5 lg:1/2 flex flex-col items-center justify-end">
         <img src={me} className="object-contain h-96 lg:h-80" alt="bro" />
