@@ -35,16 +35,18 @@ const Navbar = () => {
           </Link>
         </div>
         {/* items for large devices */}
-        <div className="item_container flex lg:hidden lg:w-full lg:py-8 items-center justify-end  w-2/5">
-           <p  className="item mr-4  transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
+        <div className="item_container flex lg:hidden lg:w-full lg:py-8 items-center justify-end  w-2/5 ">
+          <p className="item mr-4  transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
                      hover:scale-110 hover:text-yellow-400 "><Link to="/">Home</Link></p>
-          
+
           <p className="item mr-4 transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
                       hover:scale-110 hover:text-yellow-400"><Link to="/skills">Skills</Link></p>
           <p className="item mr-4 transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
+                      hover:scale-110 hover:text-yellow-400"><Link to="/projects">Projects</Link></p>
+          <p className="item mr-4 transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
                       hover:scale-110 hover:text-yellow-400"><Link to="/blog">Blogs</Link></p>
           <p className="item mr-4 transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
-                      hover:scale-110 hover:text-yellow-400"><Link to="/contact">Contact-Me</Link></p>
+                      hover:scale-110 hover:text-yellow-400"><Link to="/contact">Contact</Link></p>
           <p className="item mr-4 font-medium lg:hidden">|</p>
           <a href="http://facebook.com/zaeshann">
             <img src={fb} className="object-fit h-4 mr-4 transform transition duration-300 lg:mb-4 lg:h-6
@@ -61,11 +63,15 @@ const Navbar = () => {
 
         </div>
         {/* items for small devices */}
-        <div className={toggle? "item_container flex lg:flex-col lg:w-full lg:py-8 items-center justify-end  w-2/5 lg:fixed  top-16 bg-gray-800 z-20 ":"hidden"}>
+        <div className={toggle ? "item_container flex lg:flex-col lg:w-full lg:py-8 items-center justify-end  w-2/5 lg:fixed  top-16 bg-gray-800 z-20 " : "hidden"}>
           <p className="item mr-4  transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
                      hover:scale-110 hover:text-yellow-400 "><Link to="/">Home</Link></p>
           <p className="item mr-4 transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
                       hover:scale-110 hover:text-yellow-400"><Link to="/skills">Skills</Link></p>
+
+          <p className="item mr-4 transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
+                      hover:scale-110 hover:text-yellow-400"><Link to="/projects">Projects</Link></p>
+
           <p className="item mr-4 transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
                       hover:scale-110 hover:text-yellow-400"><Link to="/blog">Blogs</Link></p>
           <p className="item mr-4 transform transition duration-300 lg:mb-4 lg:font-normal lg:text-2xl
